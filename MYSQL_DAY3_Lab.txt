@@ -1,0 +1,72 @@
+mysql> use ecommerce;
+Database changed
+
+mysql> create table employee(emp_id varchar(20) not null Primary Key, first_name varchar(30) not null , last_name varchar(30) not null, age int not null , email varchar(50) not null);
+Query OK, 0 rows affected (0.05 sec)
+
+
+mysql> desc employee;
++------------+-------------+------+-----+---------+-------+
+| Field      | Type        | Null | Key | Default | Extra |
++------------+-------------+------+-----+---------+-------+
+| emp_id     | varchar(20) | NO   | PRI | NULL    |       |
+| first_name | varchar(30) | NO   |     | NULL    |       |
+| last_name  | varchar(30) | NO   |     | NULL    |       |
+| age        | int         | NO   |     | NULL    |       |
+| email      | varchar(50) | NO   |     | NULL    |       |
++------------+-------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql>  insert into employee values 
+('E101','Poonam','Dabhade',22,'danhadepoonam3@gmail.com'),
+('E102','Prachi','Dabhade',20,'danhadeprachi3@gmail.com'),
+('E103','Sakshi','Dabhade',16,'danhadesakshi3@gmail.com'),
+('E104','Rohan','Dabhade',25,'danhaderohan3@gmail.com'),
+('E105','Tushar','Dabhade',27,'danhadetushar3@gmail.com');
+Query OK, 5 rows affected (0.01 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+ mysql>  select * from employee;
++--------+------------+-----------+-----+--------------------------+
+| emp_id | first_name | last_name | age | email                    |
++--------+------------+-----------+-----+--------------------------+
+| E101   | Poonam     | Dabhade   |  22 | danhadepoonam3@gmail.com |
+| E102   | Prachi     | Dabhade   |  20 | danhadeprachi3@gmail.com |
+| E103   | Sakshi     | Dabhade   |  16 | danhadesakshi3@gmail.com |
+| E104   | Rohan      | Dabhade   |  25 | danhaderohan3@gmail.com  |
+| E105   | Tushar     | Dabhade   |  27 | danhadetushar3@gmail.com |
++--------+------------+-----------+-----+--------------------------+
+5 rows in set (0.00 sec)
+
+mysql> mysql> select first_name , last_name from employee;
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| Poonam     | Dabhade   |
+| Prachi     | Dabhade   |
+| Sakshi     | Dabhade   |
+| Rohan      | Dabhade   |
+| Tushar     | Dabhade   |
++------------+-----------+
+5 rows in set (0.00 sec)
+
+mysql> select first_name , last_name, age from employee where age>=30;
+Empty set (0.01 sec)
+
+
+mysql> update employee set age=age+1 where age>=25;
+Query OK, 2 rows affected (0.07 sec)
+Rows matched: 2  Changed: 2  Warnings: 0
+
+mysql> select * from employee;
++--------+------------+-----------+-----+--------------------------+
+| emp_id | first_name | last_name | age | email                    |
++--------+------------+-----------+-----+--------------------------+
+| E101   | Poonam     | Dabhade   |  22 | danhadepoonam3@gmail.com |
+| E102   | Prachi     | Dabhade   |  20 | danhadeprachi3@gmail.com |
+| E103   | Sakshi     | Dabhade   |  16 | danhadesakshi3@gmail.com |
+| E104   | Rohan      | Dabhade   |  26 | danhaderohan3@gmail.com  |
+| E105   | Tushar     | Dabhade   |  28 | danhadetushar3@gmail.com |
++--------+------------+-----------+-----+--------------------------+
+5 rows in set (0.00 sec)
+
