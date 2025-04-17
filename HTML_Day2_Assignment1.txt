@@ -1,0 +1,116 @@
+<!--Assignement No -1  Html page for resume-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nikita Autade Resume</title>
+
+    <!-- CSS Styling for page -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 25px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fefefe;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        h2 {
+            color: #3366cc;
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 5px;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        strong {
+            font-weight: bold;
+        }
+        p {
+            margin: 5px 0;
+        }
+        a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Name and Contact Information -->
+    <h1>Nikita Autade</h1>
+    <p><strong>Email:</strong> <a href="mailto:nikita@gmail.com">nikita@gmail.com</a></p>
+    <p><strong>Phone:</strong> 7821990929</p>
+    <p><strong>Address:</strong> Sant Tukaram Nagar, Pimpri, Pune, Maharashtra</p>
+    <p><strong>Date of Birth:</strong> 05/01/2002</p>
+    <p><strong>Marital Status:</strong> Single</p>
+
+    <!-- Career Objective-->
+    <h2>Career Objective</h2>
+    <p>
+        Motivated and detail-oriented college student with strong Python programming skills and hands-on experience in 
+        developing innovative projects. Successfully created a House Rental Website using Python , sql .    </p>
+
+    <!-- Education Section -->
+    <h2>Education</h2>
+    <ul>
+        <li><strong>Masters in Computer Science:</strong> Dr Dy Patil  ACS College ,Pimpri (2023-pursuing)</li>
+        <li><strong>Bachelor's in Computer Science:</strong> Dr Dy Patil  ACS College ,Pimpri(2020-2023)</li>
+        <li><strong>Higher Secondary School:</strong> RBNB College ,Shrirampur (2019-2020)</li>
+    </ul>
+
+    <!-- Certifications Section -->
+    <h2>Certificate</h2>
+    <ul>
+        <li>Python Certificate</li>
+        <li>Power BI Certificate</li>
+    </ul>
+
+    <!-- Academic Projects -->
+    <h2>Academic Projects</h2>
+    <ul>
+        
+        <li>
+            <strong>House Rental Website</strong> <br>
+           using Python , html ,css, javascrpit , sql .
+        </li>
+    </ul>
+
+    <!-- Skills Section -->
+    <h2>Skills</h2>
+    <ul>
+        <li><strong>Programming:</strong> Python, SQL, Power Bi, HTML, CSS,  JavaScript</li>
+        <li><strong>Platforms:</strong> Windows</li>
+        <li><strong>Editors and IDE's:</strong> VSCode,  PyCharm</li>
+    </ul>
+
+    <!-- Languages That I know-->
+    <h2>Languages</h2>
+    <ul>
+        <li>English</li>
+        <li>Marathi</li>
+        <li>Hindi</li>
+    </ul>
+
+    <!-- My Hobbies  -->
+    <h2>Hobbies</h2>
+    <ul>
+        <li>Tarvelling</li>
+        <li>Drawing</li>
+        <li>To Learn New Technologies</li>
+    </ul>
+
+    <!-- Reference -->
+    <h2>References</h2>
+    <p>Available on request.</p>
+
+</body>
+</html>
